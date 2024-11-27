@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="sports"
+            type="com.saraschandraa.pixabayusers.model.Sports" />
+
+        <variable
+            name="listener"
+            type="com.saraschandraa.pixabayusers.view.SportsListItemClickListener" />
+
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_crect"
+        android:elevation="10dp"
+        android:minHeight="200dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="200dp"
+            android:onClick="@{listener::onClick}"
+            android:padding="8dp"
+            android:tag="@{sports.largeImageURL}">
+
+            <ImageView
+                android:id="@+id/ivCellSports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imageUrl="@{sports.previewURL}"
+                android:minHeight="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageView
+                android:id="@+id/ivCellUser"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:imageUrl="@{sports.userImageURL}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ivCellSports"
+                app:layout_constraintTop_toBottomOf="@+id/ivCellSports"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/tvCellUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{sports.user}"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCellUser"
+                app:layout_constraintStart_toEndOf="@+id/ivCellUser"
+                app:layout_constraintTop_toTopOf="@+id/ivCellUser"
+                app:layout_constraintVertical_bias="0.523" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

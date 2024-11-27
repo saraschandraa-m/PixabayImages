@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PixabayUsers</string>
+    <string name="ok">OK</string>
+
+    <!-- Login Screen -->
+    <string name="login_email">Enter your email</string>
+    <string name="login_password">Enter your password</string>
+    <string name="login_btn_text">Login</string>
+    <string name="login_signup_text">Click here to Signup</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_email_empty">Email Address should not be empty</string>
+    <string name="login_password_empty">Password field should not be empty</string>
+    <string name="login_email_not_exists">Email does not exists</string>
+    <string name="login_failed">Invalid Email and Password</string>
+
+
+    <!-- Register Screen -->
+    <string name="register_signup">Signup</string>
+    <string name="register_name">Enter your name</string>
+    <string name="register_email">Enter your email</string>
+    <string name="register_password">Enter your password (6&#8211;12 characters)</string>
+    <string name="register_confirm_password">Confirm your password</string>
+    <string name="register_dob">Enter your Date of Birth</string>
+    <string name="register_email_invalid">Invalid Email Address</string>
+    <string name="register_email_exists">Email Address already exists</string>
+    <string name="register_email_empty">Email Field should not be empty</string>
+    <string name="register_name_empty">Name field should not be empty</string>
+    <string name="register_password_empty">Password field should not be empty</string>
+    <string name="register_password_length">Password must be at least 6 characters</string>
+    <string name="register_confirm_password_empty">Confirm Password field should not be empty</string>
+    <string name="register_password_mismatch">Entered passwords mismatch</string>
+    <string name="register_dob_empty">Date of Birth field is empty</string>
+    <string name="register_successful">You have registered successfully</string>
+
+
+    <!-- Detail Screen -->
+    <string name="detail_uploaded_by">Uploaded by</string>
+
+</resources>

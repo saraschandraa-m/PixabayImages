@@ -1,0 +1,53 @@
+[versions]
+agp = "8.8.0-alpha04"
+kotlin = "1.9.24"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+room_version = "2.6.1"
+shared_prefs = "1.2.1"
+dagger = "2.52"
+retrofit = "2.9.0"
+rxJavaVersion = "2.1.1"
+glideVersion = "4.9.0"
+supportVersion = "28.0.0"
+refreshLayout = "1.1.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+room = { group = "androidx.room", name = "room-runtime", version.ref = "room_version" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room_version" }
+room-complier = { group = "androidx.room", name = "room-compiler", version.ref = "room_version" }
+sharedPreferences = { group = "androidx.preference", name = "preference", version.ref = "shared_prefs" }
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
+dagger-android-support = { group = "com.google.dagger", name = "dagger-android-support", version.ref = "dagger" }
+dagger-compliler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+dagger-android-processor = { group = "com.google.dagger", name = "dagger-android-processor", version.ref = "dagger" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofit-adapter-rxjava = { group = "com.squareup.retrofit2", name = "adapter-rxjava2", version.ref = "retrofit" }
+rxjava = { group = "io.reactivex.rxjava2", name = "rxjava", version.ref = "rxJavaVersion" }
+rxandroid = { group = "io.reactivex.rxjava2", name = "rxandroid", version.ref = "rxJavaVersion" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
+android-support = { group = "com.android.support", name = "design", version.ref = "supportVersion" }
+swipeRefresh = {group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "refreshLayout"}
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "dagger" }
+
